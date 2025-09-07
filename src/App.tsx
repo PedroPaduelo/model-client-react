@@ -9,13 +9,13 @@ import DahsAgout from './pages/dahs/Agout.tsx'
 function App() {
   return (
     <BrowserRouter>
-      <div style={{ padding: 16 }}>
+      <div className="p-4">
         {/* Navegação simples para testar as rotas */}
-        <nav style={{ display: 'flex', gap: 12, marginBottom: 16 }}>
-          <Link to="/teste">Teste</Link>
-          <Link to="/login">Login</Link>
-          <Link to="/dahs/home">Dahs/Home</Link>
-          <Link to="/dahs/agout">Dahs/Agout</Link>
+        <nav className="flex gap-3 mb-4 text-blue-600">
+          <Link className="hover:underline" to="/teste">Teste</Link>
+          <Link className="hover:underline" to="/login">Login</Link>
+          <Link className="hover:underline" to="/dahs/home">Dahs/Home</Link>
+          <Link className="hover:underline" to="/dahs/agout">Dahs/Agout</Link>
         </nav>
 
         <Routes>
