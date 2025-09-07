@@ -29,8 +29,8 @@ export default function Login() {
   }
 
   return (
-    <div className="flex min-h-[70vh] items-center justify-center px-4">
-      <Card className="w-full max-w-md">
+    <div className="px-4 max-w-md">
+      <Card className="w-full">
         <CardHeader>
           <CardTitle className="text-2xl">Entrar</CardTitle>
           <CardDescription>Acesse sua conta para continuar</CardDescription>
