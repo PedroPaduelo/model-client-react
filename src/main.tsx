@@ -2,12 +2,12 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
-import { ThemeProvider } from 'next-themes'
+import { AppProvider } from '@/components/providers/app-provider'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+    <AppProvider>
       <App />
-    </ThemeProvider>
+    </AppProvider>
   </StrictMode>,
 )
